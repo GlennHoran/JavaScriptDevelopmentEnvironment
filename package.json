@@ -14,7 +14,7 @@
     "share": "npm-run-all --parallel open:src localtunnel",
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint:watch": "npm run lint -- --watch",
-    "test": "node_modules/mocha/bin/mocha --reporter nyan buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test": "mocha --reporter nyan buildScripts/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
   },
   "author": "Cory House",
