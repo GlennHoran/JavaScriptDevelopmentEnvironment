@@ -14,7 +14,7 @@
     "share": "npm-run-all --parallel open:src localtunnel",
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint:watch": "npm run lint -- --watch",
-    "test": "mocha --reporter nyan buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test": "./node_modules/mocha/bin/mocha --reporter nyan buildScripts/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
   },
   "author": "Cory House",
@@ -34,7 +34,7 @@
     "compression": "1.6.2",
     "cross-env": "3.1.3",
     "css-loader": "0.25.0",
-    "eslint": "3.8.1",
+    "eslint": "3.8.1
     "eslint-plugin-import": "2.0.1",
     "eslint-watch": "2.1.14",
     "express": "4.14.0",
