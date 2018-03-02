@@ -1,0 +1,6 @@
+//configures babel to transpile code to js
+{
+  "presets": [
+    "latest"
+  ]
+}
